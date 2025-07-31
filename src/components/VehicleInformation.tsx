@@ -7,7 +7,6 @@ const modelOpts = ['base', 'limited']
 
 export default function VehicleInformation() {
     const {vehicleInfo} = useApplicationData();
-    console.log('vehicleInfo', vehicleInfo);
     const {updateApplication} = useApplicationApi();
 
     const handleUpdateInput = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {

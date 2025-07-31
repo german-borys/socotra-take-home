@@ -3,9 +3,6 @@ import { render, screen } from '@testing-library/react';
 import PersonalInformation from './PersonalInformation';
 import AppContext from '../store';
 
-// Mock any child components PersonalInformation might use, if needed
-// jest.mock('./SomeChild', () => () => <div>SomeChild</div>);
-
 function renderWithContext() {
   return render(
     <AppContext>

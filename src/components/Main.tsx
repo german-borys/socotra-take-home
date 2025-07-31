@@ -6,18 +6,9 @@ import CoverageOpts from './CoverageOpts';
 import ReviewQuote from './ReviewQuote';
 import { useApplicationData } from '../store';
 import Navbar from './Navbar';
-const pages = [
-   'Personal Information',
-   'Address Details',
-   'Vehicle Information',
-   'Coverage Options',
-   'Review & Quote'
-]
 
 export default function Main() {
     const {activeStep} = useApplicationData();
-
-    console.log('Active Step: ', activeStep);
     let Comp;
     // determine active step component
     switch(activeStep) {
@@ -38,9 +29,8 @@ export default function Main() {
     } 
 
     return <div className='Main-wrapper'>
-    <div className='Step-wrapper'>
-        <Comp />
-        
+        <div className='Step-wrapper'>
+            <Comp />
         </div>
         <Navbar />
     </div>

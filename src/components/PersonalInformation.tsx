@@ -2,7 +2,6 @@ import React from 'react';
 import { useApplicationData, useApplicationApi } from '../store';
 export default function PersonalInformation() {
     const {personalInfo} = useApplicationData();
-    console.log('personalInfo', personalInfo);
     const {updateApplication} = useApplicationApi();
 
     const handleUpdateInput = (e: React.ChangeEvent<HTMLInputElement>) => {

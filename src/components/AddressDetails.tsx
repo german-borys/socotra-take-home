@@ -16,7 +16,6 @@ const stateNames = [
 
 export default function AddressDetails() {
     const {address} = useApplicationData();
-    console.log('address', address);
     const {updateApplication} = useApplicationApi();
 
     const handleUpdateInput = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {

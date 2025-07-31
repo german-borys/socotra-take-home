@@ -7,7 +7,6 @@ const deductibleOpts = ['$250', '$500', '$1000'];
 
 export default function CoverageOpts() {
     const {coverageOpts} = useApplicationData();
-    console.log('coverageOpts', coverageOpts);
     const {updateApplication} = useApplicationApi();
 
     const handleUpdateInput = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
