@@ -2,6 +2,13 @@
 
 ## Getting Started
 
+
+###  Clone Repository
+
+```sh
+git clone git@github.com:german-borys/socotra-take-home.git
+```
+
 ### 1. Install Dependencies
 
 ```sh
